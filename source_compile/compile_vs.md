@@ -27,7 +27,7 @@ cd /d X:/your/downloaded/Tengine
 md build
 cd build
 cmake.exe -G "Visual Studio 15 2017 Win64" -DTENGINE_OPENMP=OFF -DTENGINE_BUILD_EXAMPLES=OFF ..
-::cmake.exe -G "Visual Studio 16 2019" -A x64 -DTENGINE_OPENMP=OFF ..
+::cmake.exe -G "Visual Studio 16 2019" -A x64 -DTENGINE_OPENMP=OFF -DTENGINE_BUILD_EXAMPLES=OFF ..
 cmake.exe --build . --parallel %NUMBER_OF_PROCESSORS%
 cmake.exe --build . --target install
 ```
